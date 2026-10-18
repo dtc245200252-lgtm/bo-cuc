@@ -1,0 +1,233 @@
+/* Thiết lập cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. Bộ chọn body: Cố định phông chữ cho cả trang */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 1. Bộ chọn #main: Cố định độ rộng và căn chỉnh nằm giữa màn hình */
+#main {
+    width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* 2. Bộ chọn #head: Chiều cao, màu nền, đường viền, khoảng cách lề dưới */
+#head {
+    height: 110px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    border: 1px solid #1c3666;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#head h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#head p {
+    font-size: 14px;
+    color: #dbe4ff;
+}
+
+/* 4. Bộ chọn #head-link: Vùng liên kết điều hướng đầu trang */
+#head-link {
+    height: 42px;
+    background-color: #2c3e50;
+    border: 1px solid #233140;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#head-link ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#head-link ul li {
+    margin-right: 5px;
+}
+
+#head-link ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+#head-link ul li a:hover,
+#head-link ul li a.active {
+    background-color: #3498db;
+}
+
+/* 6. Bộ chọn #left: Vùng nội dung bên trái (rộng 200px, min-height 400px, float: left) */
+#left {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #f9fbfd;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    padding: 12px;
+    margin-right: 10px;
+}
+
+#left h3 {
+    font-size: 16px;
+    color: #1e3c72;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+#left .side-menu {
+    list-style: none;
+}
+
+#left .side-menu li {
+    margin-bottom: 8px;
+}
+
+#left .side-menu li a {
+    display: block;
+    color: #444;
+    text-decoration: none;
+    padding: 6px 10px;
+    font-size: 13px;
+    background: #edf2f7;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+#left .side-menu li a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    padding-left: 14px;
+}
+
+/* 8. Bộ chọn #content: Vùng nội dung chính giữa (rộng 520px, min-height 400px, float: left) */
+#content {
+    width: 520px;
+    min-height: 400px;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+#content .content-box {
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+#content .content-box:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#content h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+#content p {
+    font-size: 14px;
+    color: #555555;
+    text-align: justify;
+}
+
+#content .slide-placeholder {
+    height: 120px;
+    background-color: #e8f4fd;
+    border: 1px dashed #3498db;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2980b9;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+/* 8. Bộ chọn #right: Vùng thông tin bên phải (rộng 200px, min-height 400px, float: right hoặc left) */
+#right {
+    width: 200px;
+    min-height: 400px;
+    float: right;
+    background-color: #f9fbfd;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+#right h3 {
+    font-size: 16px;
+    color: #1e3c72;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e67e22;
+}
+
+#right .widget-box {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+
+#right .widget-box h4 {
+    font-size: 13px;
+    color: #d35400;
+    margin-bottom: 4px;
+}
+
+#right .widget-box p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* 10. Bộ chọn #footer: Phân vùng cuối trang, sử dụng clear: both để xuống dòng */
+#footer {
+    clear: both;
+    min-height: 45px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px 10px;
+    margin-top: 10px;
+    font-size: 13px;
+}
